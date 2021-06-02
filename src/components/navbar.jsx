@@ -131,6 +131,11 @@ class Navbar extends React.Component {
                   Contact Me
                 </a>
               </li>
+              {/* <li className="nav-item">
+                <a className="nav-link js-scroll" href="https://stackoverflow.com/users/story/pdf/1518978?View=Pdf">
+                  Download CV
+                </a>
+              </li> */}
             </ul>
           </div>
         </div>
