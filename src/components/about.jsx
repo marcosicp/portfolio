@@ -230,7 +230,6 @@ class About extends React.Component {
                         );
                       })}
                     </div>
-
                     <h4>BackEnd</h4>
                     <div className="skill-mf">
                       {this.state.skillsBackEnd.map((skill) => {
