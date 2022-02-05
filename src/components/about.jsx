@@ -232,10 +232,10 @@ class About extends React.Component {
                     </div>
                     <h4>BackEnd</h4>
                     <div className="skill-mf">
-                      {this.state.skillsBackEnd.map((skill) => {
+                      {this.state.skillsBackEnd.map((skill1) => {
                         return (
-                          <React.Fragment key={skill.id}>
-                            <div className="chip">{skill.content}</div>{" "}
+                          <React.Fragment key={skill1.id}>
+                            <div className="chip">{skill1.content}</div>{" "}
                           </React.Fragment>
                         );
                       })}
@@ -255,11 +255,11 @@ class About extends React.Component {
                     <h4>Databases</h4>
                     <div className="skill-mf">
                       
-                      {this.state.skillsDB.map((skill) => {
+                      {this.state.skillsDB.map((skill2) => {
                         return (
-                          <React.Fragment key={skill.id}>
+                          <React.Fragment key={skill2.id}>
                             <div className="chip">
-                              {skill.content}
+                              {skill2.content}
                             </div>{" "}
                           </React.Fragment>
                         );
@@ -267,11 +267,11 @@ class About extends React.Component {
                     </div>
                     <h4>Cloud</h4>
                     <div className="skill-mf">
-                      {this.state.skillsCloud.map((skill) => {
+                      {this.state.skillsCloud.map((skill3) => {
                         return (
-                          <React.Fragment key={skill.id}>
+                          <React.Fragment key={skill3.id}>
                             <div className="chip">
-                              {skill.content}
+                              {skill3.content}
                             </div>{" "}
                           </React.Fragment>
                         );
