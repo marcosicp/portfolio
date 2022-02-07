@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6283866e8c9843ff6bb95041ec986564",
+    "revision": "1532e3fea9b3bc6d4efe5a05af4e7148",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "d611fa87831c82badb1f",
+    "revision": "76c2f83554054569b854",
     "url": "/portfolio/static/css/2.242f24fe.chunk.css"
   },
   {
-    "revision": "a3872dc33a3951cde203",
-    "url": "/portfolio/static/css/main.d38e856a.chunk.css"
+    "revision": "1ae26629ce12c7e9f7f4",
+    "url": "/portfolio/static/css/main.a37ef4b0.chunk.css"
   },
   {
-    "revision": "d611fa87831c82badb1f",
-    "url": "/portfolio/static/js/2.56aefe09.chunk.js"
+    "revision": "76c2f83554054569b854",
+    "url": "/portfolio/static/js/2.eb8c38d6.chunk.js"
   },
   {
     "revision": "f2e097a5fa04a5d1b01656a6cd1a1a1a",
-    "url": "/portfolio/static/js/2.56aefe09.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.eb8c38d6.chunk.js.LICENSE"
   },
   {
-    "revision": "a3872dc33a3951cde203",
-    "url": "/portfolio/static/js/main.d60a9fdd.chunk.js"
+    "revision": "1ae26629ce12c7e9f7f4",
+    "url": "/portfolio/static/js/main.f2f42c4d.chunk.js"
   },
   {
     "revision": "6fef3673099b4dcdb973",
     "url": "/portfolio/static/js/runtime-main.fed7eca6.js"
+  },
+  {
+    "revision": "ff9c5c9c0e5e5a018744a768db85f195",
+    "url": "/portfolio/static/media/Marcos_Casor_UPD.ff9c5c9c.pdf"
   },
   {
     "revision": "67af05e12311bac06327b43ca31e166b",
@@ -36,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "912ec66d7572ff821749319396470bde",
-    "url": "/portfolio/static/media/fontawesome-webfont.912ec66d.svg"
+    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
+    "url": "/portfolio/static/media/fontawesome-webfont.acf3dcb7.svg"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
@@ -64,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/ionicons.2c2ae068.eot"
   },
   {
-    "revision": "621bd386841f74e0053cb8e67f8a0604",
-    "url": "/portfolio/static/media/ionicons.621bd386.svg"
+    "revision": "c037dbbc0e6790f30e824a50010df5fb",
+    "url": "/portfolio/static/media/ionicons.c037dbbc.svg"
   },
   {
     "revision": "a82ab1cd3c28c0a07a4932d57176cb88",
