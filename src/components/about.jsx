@@ -141,7 +141,7 @@ class About extends React.Component {
         },
         {
           id: "Azure_skill",
-          content: "C#",
+          content: "Azure",
           image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
           porcentage: "70%",
           value: "70",
