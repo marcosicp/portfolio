@@ -468,8 +468,8 @@ NAVBAR
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
@@ -711,7 +711,7 @@ PORTFOLIO
 
 .work-img {
   display: block;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .work-img img {
@@ -720,6 +720,7 @@ PORTFOLIO
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  height: max-content;
 }
 
 .work-content .w-more {

@@ -13,9 +13,23 @@ class About extends React.Component {
           value: "80",
         },
         {
+          id: "CSS_skill",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          content: "CSS",
+          porcentage: "75%",
+          value: "75",
+        },
+        {
           id: "CSS3_skill",
           image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
           content: "CSS3",
+          porcentage: "75%",
+          value: "75",
+        },
+        {
+          id: "SCSS_skill",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          content: "SCSS",
           porcentage: "75%",
           value: "75",
         },
@@ -30,6 +44,13 @@ class About extends React.Component {
           id: "Angular_skill",
           image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
           content: "Angular",
+          porcentage: "90%",
+          value: "90",
+        },
+        {
+          id: "React_skill",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          content: "React",
           porcentage: "90%",
           value: "90",
         },
@@ -65,13 +86,7 @@ class About extends React.Component {
         },
       ],
       skillsDB: [
-        {
-          id: "MySQL_skill",
-          content: "MySQL",
-          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
-          porcentage: "80%",
-          value: "80",
-        },
+        
         {
           id: "CosmosDB_skill",
           content: "CosmosDB",
@@ -96,6 +111,20 @@ class About extends React.Component {
         {
           id: "SQLite_skill",
           content: "SQLite",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "MySQL_skill",
+          content: "MySQL",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "Firestore_skill",
+          content: "Firestore",
           image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
           porcentage: "80%",
           value: "80",
@@ -163,6 +192,20 @@ class About extends React.Component {
         {
           id: "BitBucket_skill",
           content: "BitBucket",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          porcentage: "75%",
+          value: "75",
+        },
+        {
+          id: "Octupus_skill",
+          content: "Octupus",
+          image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
+          porcentage: "75%",
+          value: "75",
+        },
+        {
+          id: "TeamCity_skill",
+          content: "TeamCity",
           image: "https://img.icons8.com/wired/64/000000/javascript-logo.png",
           porcentage: "75%",
           value: "75",
@@ -265,7 +308,7 @@ class About extends React.Component {
                         );
                       })}
                     </div>
-                    <h4>Cloud</h4>
+                    <h4>Other Techs</h4>
                     <div className="skill-mf">
                       {this.state.skillsCloud.map((skill3) => {
                         return (
