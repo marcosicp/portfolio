@@ -23,9 +23,9 @@ class Contact extends React.Component {
                       <div>
                         <a
                           className="btn btn-primary btn js-scroll px-4"
-                          href={pdf}
+                          href={pdf} target="_blank"
                         >
-                          CV from StackOverflow
+                          PDF
                         </a>
                       </div>
                     </div>
