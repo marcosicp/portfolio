@@ -27,6 +27,7 @@ import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
+import PdfViewer from './components/pdf-viewer';
 
 
 
@@ -36,12 +37,13 @@ ReactDOM.render(
         <Intro />
         <About />
         <Portfolio />
+        {/* <PdfViewer/> */}
         <Contact />
         <BackToTop />
         <Preloader />
     </React.Fragment>,
 document.getElementById('root'));
-
+// pdfjs.GlobalWorkerOptions.workerSrc = "cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js";
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

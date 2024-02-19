@@ -1,6 +1,8 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
 import pdf from '../Marcos_Casor_UPD.pdf'
+import soIcon from "../img/stack-overflow.png";
+
 
 class Contact extends React.Component {
   render() {
@@ -68,10 +70,10 @@ class Contact extends React.Component {
                                 <img
                                   align="center"
                                   className="imgSO"
-                                  src="https://camo.githubusercontent.com/bd44ccfd9dad8d42fb19cacdac1ce3d2da666127da16876455a661988cf65f5d/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f6e706d2f73696d706c652d69636f6e7340332e302e312f69636f6e732f737461636b6f766572666c6f772e737667"
+                                  src={soIcon}
                                   alt="stackoverflow"
                                   height="25"
-                                  width="34"
+                                  width="25"
                                   data-canonical-src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg"
                                 />
                               </span>

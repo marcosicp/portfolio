@@ -83,3 +83,22 @@ h4{
 .imgSO{
   margin-bottom: 5px;
 }
+
+.react-pdf__Page{
+  // position: absolute;
+  top: -340px;
+  width: '3%';
+  left: -80px;
+  text-align: center;
+}
+
+.react-pdf__Page__canvas{
+  // height: 300px;
+  width: '3%';
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+  /* Regular CSS rules here*/
+  
+  }
