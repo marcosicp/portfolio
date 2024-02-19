@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.21877373.chunk.css",
-    "main.js": "/portfolio/static/js/main.b1137e07.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b1137e07.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.a22dbfc9.chunk.css",
+    "main.js": "/portfolio/static/js/main.0e4cd3af.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0e4cd3af.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8940859c.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8940859c.js.map",
     "static/css/2.a417cd58.chunk.css": "/portfolio/static/css/2.a417cd58.chunk.css",
-    "static/js/2.ce5c7ce5.chunk.js": "/portfolio/static/js/2.ce5c7ce5.chunk.js",
-    "static/js/2.ce5c7ce5.chunk.js.map": "/portfolio/static/js/2.ce5c7ce5.chunk.js.map",
+    "static/js/2.dc638ca7.chunk.js": "/portfolio/static/js/2.dc638ca7.chunk.js",
+    "static/js/2.dc638ca7.chunk.js.map": "/portfolio/static/js/2.dc638ca7.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1981f79a3c9db99af5a0d84e3447a7f6.js": "/portfolio/precache-manifest.1981f79a3c9db99af5a0d84e3447a7f6.js",
+    "precache-manifest.9421f61de91014b57269c6b6b153ca1c.js": "/portfolio/precache-manifest.9421f61de91014b57269c6b6b153ca1c.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.a417cd58.chunk.css.map": "/portfolio/static/css/2.a417cd58.chunk.css.map",
-    "static/css/main.21877373.chunk.css.map": "/portfolio/static/css/main.21877373.chunk.css.map",
-    "static/js/2.ce5c7ce5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ce5c7ce5.chunk.js.LICENSE.txt",
+    "static/css/main.a22dbfc9.chunk.css.map": "/portfolio/static/css/main.a22dbfc9.chunk.css.map",
+    "static/js/2.dc638ca7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dc638ca7.chunk.js.LICENSE.txt",
     "static/media/KieroKuentos_GooglePlay1.png": "/portfolio/static/media/KieroKuentos_GooglePlay1.85203fe5.png",
     "static/media/KieroKuentos_GooglePlay2.png": "/portfolio/static/media/KieroKuentos_GooglePlay2.afb8a35a.png",
     "static/media/KieroKuentos_GooglePlay3.png": "/portfolio/static/media/KieroKuentos_GooglePlay3.0b14c94e.png",
@@ -21,8 +21,10 @@
     "static/media/Marcos_Casor_UPD.pdf": "/portfolio/static/media/Marcos_Casor_UPD.e77ad6ec.pdf",
     "static/media/admin1.PNG": "/portfolio/static/media/admin1.ea652850.PNG",
     "static/media/adminportada.PNG": "/portfolio/static/media/adminportada.3a4a3b1b.PNG",
+    "static/media/animationhome.webm": "/portfolio/static/media/animationhome.30262753.webm",
     "static/media/captura.png": "/portfolio/static/media/captura.433f4c8d.png",
     "static/media/earth.jpg": "/portfolio/static/media/earth.67af05e1.jpg",
+    "static/media/ens-home.png": "/portfolio/static/media/ens-home.9c17b9a8.png",
     "static/media/font-awesome.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/ionicons.css": "/portfolio/static/media/ionicons.621bd386.svg",
     "static/media/male.png": "/portfolio/static/media/male.a82ab1cd.png",
@@ -34,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.8940859c.js",
     "static/css/2.a417cd58.chunk.css",
-    "static/js/2.ce5c7ce5.chunk.js",
-    "static/css/main.21877373.chunk.css",
-    "static/js/main.b1137e07.chunk.js"
+    "static/js/2.dc638ca7.chunk.js",
+    "static/css/main.a22dbfc9.chunk.css",
+    "static/js/main.0e4cd3af.chunk.js"
   ]
 }
