@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import samplePDF from "../Marcos_Casor_UPD.pdf";
+import samplePDF from "../Marcos_Casor_UPDATED.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = "cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js";
 class PdfViewer extends React.Component {
@@ -11,7 +10,7 @@ class PdfViewer extends React.Component {
       "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/" + pdfjs.version + "/pdf.worker.js";
 
     this.onDocumentLoadSuccess = ({ numPages }) => {
-      debugger;
+      
     };
   }
 

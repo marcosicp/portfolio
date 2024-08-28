@@ -104,14 +104,14 @@ class Portfolio extends React.Component {
         
       },
 
-      imagesRugbyApp: {
-        image1:
-          "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura2.PNG",
-        image2:
-          "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura.PNG",
-        image3:
-          "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura3.PNG",
-      },
+      // imagesRugbyApp: {
+      //   image1:
+      //     "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura2.PNG",
+      //   image2:
+      //     "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura.PNG",
+      //   image3:
+      //     "https://github.com/marcosicp/rugbynewsapp/raw/master/assets/screenshots/Captura3.PNG",
+      // },
 
       imagesPosSales: {
         image1:
@@ -131,9 +131,9 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box-2">
-                <h5 className="title-left">Recent Works</h5>
+                <h5 className="title-left color-titles">Projects</h5>
                 <p className="subtitle-a" style={{paddingTop: "5px"}}>
-                  Check some of the projects I have been working on
+                  Check some of the projects I have been working on. Most of them created from scratch.
                 </p>
 
               </div>
@@ -169,7 +169,7 @@ class Portfolio extends React.Component {
                       </div>
                       <div className="col-sm-2">
                         <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
+                          <span className="ion-ios-eye-outline color-secondary"></span>
                         </div>
                       </div>
                     </div>
@@ -221,7 +221,7 @@ class Portfolio extends React.Component {
                         data-lightbox="gallery-aguadeluz"
                       >
                         <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
+                          <span className="ion-ios-eye-outline color-secondary"></span>
                         </div>
                       </a>
                     </div>
@@ -252,7 +252,7 @@ class Portfolio extends React.Component {
               </div>
             </div>
 
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="work-box">
                 <a
                   href={this.images.imagesRugbyApp.image1}
@@ -300,7 +300,7 @@ class Portfolio extends React.Component {
                   jsx-a11y/anchor-has-content warning
                 </a>
               </div>
-            </div>
+            </div> */}
             <div className="col-md-4">
               <div className="work-box">
                 <a

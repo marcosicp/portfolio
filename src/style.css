@@ -31,7 +31,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: #5C3420;
 }
 
 .color-d {
@@ -40,6 +40,25 @@ a:hover {
 
 .color-text-a {
   color: #4e4e4e;
+}
+
+.color-titles {
+  color: #5C3420;
+}
+
+.color-primary {
+  color: #5C3420;
+}
+.color-primary-bg {
+  background-color: #5C3420;
+}
+
+.color-secondary {
+  color: #C88A35;
+}
+
+.color-secondary-bg {
+  background-color: #C88A35;
 }
 
 .box-shadow,
@@ -82,7 +101,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #5C3420;
 }
 
 .overlay-mf {
@@ -171,7 +190,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #C88A35;
   width: 100px;
   bottom: -12px;
 }
@@ -208,7 +227,7 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #C88A35;
   transition: all 500ms ease;
 }
 
@@ -473,22 +492,22 @@ NAVBAR
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #5C3420;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #C88A35;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #5C3420;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #5C3420;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
@@ -729,7 +748,7 @@ PORTFOLIO
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: #5C3420;
 }
 
 .work-content .w-like {

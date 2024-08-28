@@ -1,6 +1,6 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
-import pdf from '../Marcos_Casor_UPD.pdf'
+import pdf from '../Marcos_Casor_UPDATED.pdf'
 import soIcon from "../img/stack-overflow.png";
 
 
@@ -20,11 +20,12 @@ class Contact extends React.Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title-box-2">
-                        <h5 className="title-left">Download CV</h5>
+                        <h5 className="title-left color-titles">Download CV</h5>
                       </div>
                       <div>
                         <a
-                          className="btn btn-primary btn js-scroll px-4"
+                          className="btn btn-primary btn js-scroll px-4 "
+                          style={{backgroundColor: "#C88A35", borderColor: "#C88A35"}}
                           href={pdf} target="_blank"
                         >
                           PDF
@@ -33,7 +34,7 @@ class Contact extends React.Component {
                     </div>
                     <div className="col-md-6">
                       <div className="title-box-2">
-                        <h5 className="title-left">Get in Touch</h5>
+                        <h5 className="title-left color-titles">Get in Touch</h5>
                       </div>
 
                       <div className="socials" style={{ paddingTop: "0px" }}>

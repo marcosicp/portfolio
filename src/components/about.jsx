@@ -1,4 +1,5 @@
 import React from "react";
+import mePhoto from "../img/profile.jpg";
 
 class About extends React.Component {
   constructor() {
@@ -312,24 +313,38 @@ class About extends React.Component {
               <div className="">
                 <div className="about-me pt-4 pt-md-0">
                   <div className="title-box-2">
-                    <h5 className="title-left">About Me</h5>
+                    <h5 className="title-left color-titles">About Me</h5>
                   </div>
                   <div className="row">
                     <div className="col-md-6">
-                      I'm a versatile software developer graduated from{" "}
-                      <a href="https://www.cervantes.edu.ar/">
-                        {" "}
-                        <b>Cervantes Institute</b>
-                      </a>{" "}
-                      passionate about crafting engaging and efficient user experiences. I leverage my expertise in .NET
-                      (backend), Angular (frontend), and Flutter (mobile) to build robust and scalable applications,
+                      <div className="row">
+                        <div className="col-md-3">
+                          <div className="text-center">
+                            <img src={mePhoto} alt="my photo" width={90} className="rounded" />
+                          </div>
+                        </div>
+                        <div className="col-md-9">
+                          I'm a software developer graduated from{" "}
+                          <a href="https://www.cervantes.edu.ar/">
+                            {" "}
+                            <b>Cervantes Institute</b>
+                          </a>{" "}
+                          passionate about crafting engaging and efficient user experiences. I leverage my expertise in
+                          .NET (backend), Angular (frontend), and Flutter (mobile) to build robust and scalable
+                          applications,
+                        </div>
+                      </div>
                       tailored to meet diverse project needs. I continuously seek out new technologies and knowledge,
                       staying ahead of the curve and contributing to personal and professional growth.
                       <br />
                       <br />
                     </div>
                     <div className="col-md-6">
-                      <b>Strengths & Experience</b> <br />
+                      <b style={{ borderBottom: "2px solid #4E4E4E", paddingBottom: "5px", fontSize: "20px" }}>
+                        {" "}
+                        Strengths & Experience
+                      </b>{" "}
+                      <br />
                       <br />
                       <b>Full-Stack Mastery:</b> I thrive in both front-end and back-end development, seamlessly
                       connecting user interfaces with powerful backend logic.
@@ -348,18 +363,10 @@ class About extends React.Component {
                     </div>
                   </div>
                   <br />
-                  {/* </p> */}
-                  {/* {this.state.about_me.map((content) => {
-                        return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
-                        );
-                      })} */}
                 </div>
               </div>
               <div className="title-box-2">
-                <h5 className="title-left">Stack I use</h5>
+                <h5 className="title-left color-titles">Stack I use</h5>
                 <div className="row">
                   <div className="col-sm-6 col-md-5" style={{ margin: "0 auto" }}>
                     <div className="about-img" style={{ textAlign: "center" }}>
@@ -417,21 +424,9 @@ class About extends React.Component {
                     );
                   })}
                 </div>
-                {/* <h4>Cloud</h4>
-                <div className="skill-mf">
-                  {this.state.skillsCloud.map((skill3) => {
-                    return (
-                      <React.Fragment key={skill3.id}>
-                        <div className="chip">{skill3.content}</div>{" "}
-                      </React.Fragment>
-                    );
-                  })}
-                </div> */}
               </div>
             </div>
-            {/* </div> */}
           </div>
-          {/* </div> */}
         </div>
       </section>
     );
