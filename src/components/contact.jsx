@@ -9,14 +9,14 @@ class Contact extends React.Component {
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{ backgroundImage: "url(" + imageOverlay + ")" }}
+        
       >
-        <div className="overlay-mf"></div>
+        {/* <div className="overlay-mf"></div> */}
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <div className="contact-mf">
-                <div id="contact" className="box-shadow-full">
+              <div className="">
+                <div id="contact" className="">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title-box-2">
@@ -39,17 +39,7 @@ class Contact extends React.Component {
 
                       <div className="socials" style={{ paddingTop: "0px" }}>
                         <ul>
-                          <li>
-                            <a
-                              href="https://www.facebook.com/marcos.casor"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-facebook"></i>
-                              </span>
-                            </a>
-                          </li>
+                          
                           <li>
                             <a
                               href="https://github.com/marcosicp"
@@ -91,17 +81,7 @@ class Contact extends React.Component {
                               </span>
                             </a>
                           </li>
-                          <li>
-                            <a
-                              href="https://www.instagram.com/marcos.casor"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-instagram"></i>
-                              </span>
-                            </a>
-                          </li>
+                          
                           <li>
                             <a
                               href="mailto: marcos.casor@gmail.com"

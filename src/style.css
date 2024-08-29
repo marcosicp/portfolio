@@ -6,6 +6,11 @@ body {
   color: #4e4e4e!important;
 }
 
+hr.dotted {
+  border-top: 8px dotted #5C3420;
+  
+}
+
 h1,
 h2,
 h3,
@@ -60,6 +65,16 @@ a:hover {
 .color-secondary-bg {
   background-color: #C88A35;
 }
+
+.color-terciary {
+  color: #EEE7DD;
+}
+
+.color-terciary-bg {
+  background-color: #EEE7DD;
+}
+
+
 
 .box-shadow,
 .paralax-mf,
@@ -366,7 +381,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #EFE7DD;
 }
 
 #preloader:before {
@@ -374,8 +389,8 @@ a:hover {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border: 6px solid #C88A35;
+  border-top: 6px solid #5C3420;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -431,7 +446,7 @@ NAVBAR
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
-  color: #fff;
+  color: #5C3420;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -470,23 +485,23 @@ NAVBAR
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: #C88A35;
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color: #5C3420;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-  color: #fff;
+  color: #5C3420;
 }
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #f5f5f5;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -511,11 +526,11 @@ NAVBAR
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #C88A35;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: #5C3420;
 }
 
 .navbar-b .navbar-brand {
@@ -565,7 +580,7 @@ NAVBAR
 
 .navbar-toggler span {
   display: block;
-  background-color: #fff;
+  background-color: #5C3420;
   height: 3px;
   width: 25px;
   margin-top: 4px;

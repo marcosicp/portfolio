@@ -128,7 +128,7 @@ class Portfolio extends React.Component {
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
-          <div className="row">
+          <div className="row ">
             <div className="col-sm-12">
               <div className="title-box-2">
                 <h5 className="title-left color-titles">Projects</h5>

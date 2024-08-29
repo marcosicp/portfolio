@@ -1,7 +1,6 @@
 import React from "react";
 import "./stars.scss";
-// import Typed from "react-typed";
-// import reactLogo from "../img/animationhome.webm";
+import Typed from "react-typed";
 import bigImage from "../img/portada_linkedin.png";
 import lottie from "lottie-web";
 import animationData from "../img/animation.json";
@@ -18,61 +17,61 @@ class Intro extends React.Component {
   }
   render() {
     return (
-      // <div id="home" className="intro route bg-image " style={{backgroundImage: "url("+bigImage+")"}}>
-      <div
-        id="home"
-        style={{ backgroundImage: "url(" + bigImage + ")" , objectFit: "contain", backgroundRepeat: "no-repeat" }}
-        className="intro route  bg-image background"
-      >
+      <section id="home" className="intro route bg-image background-intro" style={{height: 'calc(90vh)'}}>
         <div className="intro-content display-table">
           <div className="table-cell">
-            <div className="row" style={{ alignItems: "center" }}>
-              {/* <div className="col-md-6" style={{background: 'url(../img/portada_linkedin.png)'}} >
-                <h1 className="intro-title mb-2">Hello, I am Marcos</h1>
-                <p className="intro-subtitle">
-                  
-                  <strong className="text-slider">
-                    <Typed
-                      strings={["Mobile | Frontend | Backend Developer"]}
-                      typeSpeed={80}
-                      backDelay={1100}
-                      backSpeed={30} cursorChar=""
-                      style={{ fontSize: 30 }}
-                    />
-                  </strong>
-                </p>
-                <p>
-                  
+            <div className="row align-items-center">
+              <div className="col-md-4"></div>
+              <div className="col-md-8 text-left">
+                <h1 className="color-primary pb-0 mb-0">
                   <Typed
-                    strings={["Software Teacher at Institución Cervantes"]}
-                    typeSpeed={80}
-                    backDelay={1100}
-                    backSpeed={60} cursorChar=""
-                    style={{ fontSize: 30 }}
+                    strings={["HELLO, MY NAME IS MARCOS"]}
+                    typeSpeed={30}
+                    backDelay={0}
+                    backSpeed={0}
+                    startDelay={0}
+                    cursorChar=""
+                    style={{ fontSize: 'calc(2vw + 2vh)', fontWeight: "lighter" }}
                   />
-                </p>
-              </div> */}
-              {/* <div className="col-md-6">
-                <div
-                  className="container"
-                  style={{ paddingBottom: "80px", paddingTop: "80px" }}
-                  ref={(ref) => (this.animRef = ref)}
-                ></div>
-              </div> */}
-
-              {/* <p className="pt-3">
-                <a
-                  className="btn btn-primary btn js-scroll px-4"
-                  href="#work"
-                  role="button"
-                >
-                  See my works
-                </a>
-              </p> */}
+                </h1>
+                <h2 className="color-primary pb-0 mb-0 pt-0 mt-0">
+                  <Typed
+                    strings={["MOBILE | BACKEND | FRONTEND"]}
+                    typeSpeed={30}
+                    backDelay={1100}
+                    backSpeed={30}
+                    startDelay={1500}
+                    cursorChar=""
+                    style={{ fontSize: 'calc(1.8vw + 1.8vh)' }}
+                  />
+                </h2>
+                <h2 className="color-primary pb-0 mb-0">
+                  <Typed
+                    strings={["TEACHING PROGRAMMING AT INSTITUTO CERVANTES"]}
+                    typeSpeed={30}
+                    backDelay={0}
+                    backSpeed={30}
+                    startDelay={3500}
+                    cursorChar=""
+                    style={{ fontSize: 'calc(1.8vw + 1.8vh)', fontWeight: "lighter" }}
+                  />
+                </h2>
+                <h2 className="color-primary pb-0 mb-0">
+                  <Typed
+                    strings={["¡LET'S CONNECT!"]}
+                    typeSpeed={30}
+                    backDelay={1100}
+                    backSpeed={30}
+                    startDelay={5500}
+                    cursorChar=""
+                    style={{ fontSize: 'calc(1.8vw + 1.8vh)' }}
+                  />
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
