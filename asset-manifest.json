@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.93fc7de5.chunk.css",
-    "main.js": "/portfolio/static/js/main.b9f6b355.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b9f6b355.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dc18054c.chunk.css",
+    "main.js": "/portfolio/static/js/main.7556b89a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7556b89a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8940859c.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8940859c.js.map",
     "static/css/2.a417cd58.chunk.css": "/portfolio/static/css/2.a417cd58.chunk.css",
-    "static/js/2.4042cc38.chunk.js": "/portfolio/static/js/2.4042cc38.chunk.js",
-    "static/js/2.4042cc38.chunk.js.map": "/portfolio/static/js/2.4042cc38.chunk.js.map",
+    "static/js/2.b3a07865.chunk.js": "/portfolio/static/js/2.b3a07865.chunk.js",
+    "static/js/2.b3a07865.chunk.js.map": "/portfolio/static/js/2.b3a07865.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.af55d59e1196bdfd1ff24c154f019997.js": "/portfolio/precache-manifest.af55d59e1196bdfd1ff24c154f019997.js",
+    "precache-manifest.df74d4e0b4028229cceabffff4753289.js": "/portfolio/precache-manifest.df74d4e0b4028229cceabffff4753289.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.a417cd58.chunk.css.map": "/portfolio/static/css/2.a417cd58.chunk.css.map",
-    "static/css/main.93fc7de5.chunk.css.map": "/portfolio/static/css/main.93fc7de5.chunk.css.map",
-    "static/js/2.4042cc38.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4042cc38.chunk.js.LICENSE.txt",
+    "static/css/main.dc18054c.chunk.css.map": "/portfolio/static/css/main.dc18054c.chunk.css.map",
+    "static/js/2.b3a07865.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b3a07865.chunk.js.LICENSE.txt",
     "static/media/KieroKuentos_GooglePlay1.png": "/portfolio/static/media/KieroKuentos_GooglePlay1.85203fe5.png",
     "static/media/KieroKuentos_GooglePlay2.png": "/portfolio/static/media/KieroKuentos_GooglePlay2.afb8a35a.png",
     "static/media/KieroKuentos_GooglePlay3.png": "/portfolio/static/media/KieroKuentos_GooglePlay3.0b14c94e.png",
@@ -36,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.8940859c.js",
     "static/css/2.a417cd58.chunk.css",
-    "static/js/2.4042cc38.chunk.js",
-    "static/css/main.93fc7de5.chunk.css",
-    "static/js/main.b9f6b355.chunk.js"
+    "static/js/2.b3a07865.chunk.js",
+    "static/css/main.dc18054c.chunk.css",
+    "static/js/main.7556b89a.chunk.js"
   ]
 }
