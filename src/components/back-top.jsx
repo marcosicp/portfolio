@@ -1,32 +1,41 @@
-import React from "react";
-import $ from "jquery";
-import "../libs/easing.js";
+import React, { useEffect, useRef } from "react";
 
-class BackToTop extends React.Component {
-  componentDidMount() {
-    $(".back-to-top").click(function () {
-      $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
-      return false;
-    });
-    window.addEventListener("scroll", () => {
+function BackToTop() {
+  const btnRef = useRef(null);
+
+  useEffect(() => {
+    const btn = btnRef.current;
+    if (!btn) return;
+
+    function handleScroll() {
+      if (!btn) return;
       if (window.pageYOffset > 100) {
-        document.querySelector(".back-to-top").classList.remove("fadeOut");
-        document.querySelector(".back-to-top").style.display = "block";
-        document.querySelector(".back-to-top").classList.add("fadeIn");
+        btn.classList.remove("fadeOut");
+        btn.style.display = "block";
+        btn.classList.add("fadeIn");
       } else {
-        document.querySelector(".back-to-top").classList.remove("fadeIn");
-        document.querySelector(".back-to-top").classList.add("fadeOut");
+        btn.classList.remove("fadeIn");
+        btn.classList.add("fadeOut");
       }
-    });
-  }
+    }
 
-  render() {
-    return (
-      <a href="#" className="back-to-top animated" style={{backgroundColor: "#C88A35"}}>
-        <i className="fa fa-chevron-up"></i>
-      </a>
-    );
-  }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <button
+      ref={btnRef}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="back-to-top animated"
+      style={{ backgroundColor: "#C88A35", border: "none", cursor: "pointer" }}
+      aria-label="Back to top"
+    >
+      <i className="fa fa-chevron-up"></i>
+    </button>
+  );
 }
 
 export default BackToTop;
+
+

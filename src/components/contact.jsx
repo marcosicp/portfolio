@@ -1,11 +1,9 @@
 import React from "react";
-import imageOverlay from "../img/earth.jpg";
-import pdf from '../Marcos_Casor_UPDATED.pdf'
+import pdf from '../profile_cv.pdf'
 import soIcon from "../img/stack-overflow.png";
 
 
-class Contact extends React.Component {
-  render() {
+function Contact() {
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
@@ -26,7 +24,7 @@ class Contact extends React.Component {
                         <a
                           className="btn btn-primary btn js-scroll px-4 "
                           style={{backgroundColor: "#C88A35", borderColor: "#C88A35"}}
-                          href={pdf} target="_blank"
+                          href={pdf} target="_blank" rel="noreferrer"
                         >
                           PDF
                         </a>
@@ -112,8 +110,7 @@ class Contact extends React.Component {
           </div>
         </footer>
       </section>
-    );
-  }
+  );
 }
 
 export default Contact;

@@ -15,10 +15,10 @@ import adminEns2 from "../img/proyects/ensierraschicasadmin/admin1.PNG";
 import ensHome from "../img/ens-home.png";
 
 
-class Portfolio extends React.Component {
-  constructor() {
-    super();
-    this.images = {
+function Portfolio() {
+
+
+  const images = {
       imagesEnSierrasChicas: {
         image1:
         ensHome,
@@ -122,9 +122,8 @@ class Portfolio extends React.Component {
           "https://github.com/marcosicp/pos-sales-angular/raw/master/src/assets/imagenes/Captura.PNG",
       },
     };
-  }
 
-  render() {
+
     return (
       <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
@@ -143,12 +142,12 @@ class Portfolio extends React.Component {
             <div className="col-md-4" >
               <div className="work-box" >
                 <a
-                  href={this.images.imagesEnSierrasChicas.image1}
+                  href={images.imagesEnSierrasChicas.image1}
                   data-lightbox="gallery-vmarine"
                 >
                   <div className="work-img" style={{height: "500px"}}>
                     <img
-                      src={this.images.imagesEnSierrasChicas.image1}
+                      src={images.imagesEnSierrasChicas.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -177,14 +176,14 @@ class Portfolio extends React.Component {
                 </a>
 
                 <a
-                  href={this.images.imagesEnSierrasChicas.image2}
+                  href={images.imagesEnSierrasChicas.image2}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesEnSierrasChicas.image3}
+                  href={images.imagesEnSierrasChicas.image3}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
                 >
@@ -197,7 +196,7 @@ class Portfolio extends React.Component {
               <div className="work-box">
                 <div className="work-img" style={{height: "500px"}}>
                   <img
-                    src={this.images.imagesKieroKuentos.image1}
+                    src={images.imagesKieroKuentos.image1}
                     alt=""
                     className="img-fluid"
                   />
@@ -217,7 +216,7 @@ class Portfolio extends React.Component {
                     </div>
                     <div className="col-sm-2">
                       <a
-                        href={this.images.imagesKieroKuentos.image1}
+                        href={images.imagesKieroKuentos.image1}
                         data-lightbox="gallery-aguadeluz"
                       >
                         <div className="w-like">
@@ -229,21 +228,21 @@ class Portfolio extends React.Component {
                 </div>
 
                 <a
-                  href={this.images.imagesKieroKuentos.image2}
+                  href={images.imagesKieroKuentos.image2}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesKieroKuentos.image3}
+                  href={images.imagesKieroKuentos.image3}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesKieroKuentos.image4}
+                  href={images.imagesKieroKuentos.image4}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
                 >
@@ -255,12 +254,12 @@ class Portfolio extends React.Component {
             {/* <div className="col-md-4">
               <div className="work-box">
                 <a
-                  href={this.images.imagesRugbyApp.image1}
+                  href={images.imagesRugbyApp.image1}
                   data-lightbox="gallery-medlingos"
                 >
                   <div className="work-img" style={{height: "500px"}}>
                     <img
-                      src={this.images.imagesRugbyApp.image1}
+                      src={images.imagesRugbyApp.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -286,14 +285,14 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <a
-                  href={this.images.imagesRugbyApp.image2}
+                  href={images.imagesRugbyApp.image2}
                   data-lightbox="gallery-medlingos"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesRugbyApp.image3}
+                  href={images.imagesRugbyApp.image3}
                   data-lightbox="gallery-medlingos"
                   style={{ display: "none" }}
                 >
@@ -304,12 +303,12 @@ class Portfolio extends React.Component {
             <div className="col-md-4">
               <div className="work-box">
                 <a
-                  href={this.images.imagesClinker.image1}
+                  href={images.imagesClinker.image1}
                   data-lightbox="gallery-todo"
                 >
                   <div className="work-img" style={{height: "150px"}}>
                     <img
-                      src={this.images.imagesClinker.image1}
+                      src={images.imagesClinker.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -335,7 +334,7 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <a
-                  href={this.images.imagesClinker.image1}
+                  href={images.imagesClinker.image1}
                   data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
@@ -346,12 +345,12 @@ class Portfolio extends React.Component {
             <div className="col-md-4">
               <div className="work-box">
                 <a
-                  href={this.images.imagesPosSales.image1}
+                  href={images.imagesPosSales.image1}
                   data-lightbox="gallery-smth"
                 >
                   <div className="work-img" style={{height: "150px"}}>
                     <img
-                      src={this.images.imagesPosSales.image1}
+                      src={images.imagesPosSales.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -378,14 +377,14 @@ class Portfolio extends React.Component {
                 </a>
                
                 <a
-                  href={this.images.imagesPosSales.image2}
+                  href={images.imagesPosSales.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesPosSales.image3}
+                  href={images.imagesPosSales.image3}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
@@ -396,12 +395,12 @@ class Portfolio extends React.Component {
             <div className="col-md-4">
               <div className="work-box">
                 <a
-                  href={this.images.imagesCyclearApp.image1}
+                  href={images.imagesCyclearApp.image1}
                   data-lightbox="gallery-smth"
                 >
                   <div className="work-img" style={{height: "150px"}}>
                     <img
-                      src={this.images.imagesCyclearApp.image1}
+                      src={images.imagesCyclearApp.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -429,21 +428,21 @@ class Portfolio extends React.Component {
                 </a>
 
                 <a
-                  href={this.images.imagesCyclearApp.image2}
+                  href={images.imagesCyclearApp.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesCyclearApp.image3}
+                  href={images.imagesCyclearApp.image3}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesCyclearApp.image4}
+                  href={images.imagesCyclearApp.image4}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
@@ -456,12 +455,12 @@ class Portfolio extends React.Component {
             <div className="col-md-4">
               <div className="work-box">
                 <a
-                  href={this.images.imagesAdminEnSierrasChicas.image1}
+                  href={images.imagesAdminEnSierrasChicas.image1}
                   data-lightbox="gallery-smth"
                 >
                   <div className="work-img">
                     <img
-                      src={this.images.imagesAdminEnSierrasChicas.image1}
+                      src={images.imagesAdminEnSierrasChicas.image1}
                       alt=""
                       className="img-fluid"
                     />
@@ -488,14 +487,14 @@ class Portfolio extends React.Component {
                 </a>
 
                 <a
-                  href={this.images.imagesAdminEnSierrasChicas.image2}
+                  href={images.imagesAdminEnSierrasChicas.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={this.images.imagesAdminEnSierrasChicas.image3}
+                  href={images.imagesAdminEnSierrasChicas.image3}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
                 >
@@ -508,7 +507,6 @@ class Portfolio extends React.Component {
         </div>
       </section>
     );
-  }
 }
 
 export default Portfolio;
