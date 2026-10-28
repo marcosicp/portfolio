@@ -2,29 +2,35 @@
 
 ## What is this project?
 
-Personal portfolio website for **Marcos**, a full-stack software developer. Built with React 19 and deployed to GitHub Pages at `https://marcosicp.github.io/portfolio`.
+Personal portfolio website for **Marcos**, a full-stack software developer. Built with React 19 on
+Vite 8 and deployed to GitHub Pages at `https://marcosicp.github.io/portfolio`.
 
 ## Stack
 
-- **Framework**: React 19 (Create React App)
-- **Styling**: SCSS + Bootstrap 5 + custom CSS themes (style-green, style-orange, etc.)
+- **Framework**: React 19 (Vite 8)
+- **Styling**: SCSS + Bootstrap 5
 - **Animations**: Lottie Web, react-typed
-- **PDF Viewer**: react-pdf
-- **Routing**: react-router-dom v7
-- **Deploy**: gh-pages (`npm run deploy` → builds + pushes to `gh-pages` branch)
+- **Galleries**: jQuery + Lightbox2, loaded as external classic scripts from `public/lib/`
+- **Tests**: Vitest + Testing Library (jsdom)
+- **Deploy**: gh-pages (`npm run deploy` → builds `dist/` and pushes to the `gh-pages` branch)
 
 ## Project Structure
 
 ```
+index.html         # Vite entry: title, meta, external scripts, <div id="root">
+vite.config.js     # base path, React plugin, autoprefixer, Vitest config
 src/
+  index.jsx        # Bundle entry: CSS/JS imports in cascade order, mounts <App />
+  App.jsx          # Page tree, exported for tests
+  App.test.jsx     # Render smoke tests
+  test/setup.js    # jsdom setup + lottie-web stub
   components/      # One JSX file per section
     intro.jsx      # Hero section with Lottie animation + Typed.js
     about.jsx      # Bio, photo, strengths
     stack.jsx      # Skills progress bars
-    portfolio.jsx  # Projects showcase
-    contact.jsx    # Contact form
+    portfolio.jsx  # Projects showcase (data-lightbox galleries)
+    contact.jsx    # Contact form + CV download
     navbar.jsx     # Navigation
-    pdf-viewer.jsx # Resume PDF viewer
     preloader.jsx  # Loading screen
     back-top.jsx   # Scroll to top button
     stars.scss     # Starfield background
@@ -35,9 +41,9 @@ src/
     profile.jpg    # Developer photo
     proyects/      # Project screenshots
 public/
-  css/             # Static CSS themes and overrides
-  js/main.js       # jQuery-based interactions (counterup, waypoints)
-  lib/             # Vendor JS/CSS (Bootstrap, jQuery, lightbox, etc.)
+  css/             # Leftover CSS from the original HTML template (not loaded)
+  js/main.js       # Leftover jQuery interactions (not loaded)
+  lib/             # Vendor JS/CSS (Bootstrap, jQuery, Lightbox2, etc.)
 ```
 
 ## Owner / Person
@@ -51,17 +57,23 @@ public/
 ## Conventions
 
 - Components are plain functions (no class components)
-- No TypeScript — pure JavaScript + JSX
-- CSS themes live in `public/css/` and are swapped via class on `<body>`
-- Static vendor libs are in `public/lib/` (not bundled via npm)
+- No TypeScript — pure JavaScript + JSX, and JSX must be in `.jsx` files (Vite's esbuild does not
+  parse JSX in `.js`)
+- `base: "/portfolio/"` in `vite.config.js` is required for the GitHub Pages subpath — it replaces
+  CRA's `homepage` field
+- CSS import order in `src/index.jsx` is the cascade order — do not reorder
+- Static vendor libs are in `public/lib/` (not bundled via npm) and referenced from root `index.html`
 - `src/data/skills.js` is the single source of truth for skill percentages — edit there to update the stack section
 - No state management library — local state only (useState/useEffect)
+- Never run `npm audit fix --force`: it tries to install `react-scripts@0.0.0`
 
 ## Common Tasks
 
 - **Add a project**: edit `src/components/portfolio.jsx`, add image to `src/img/proyects/`
 - **Update skills**: edit `src/data/skills.js`
 - **Update bio**: edit `src/components/about.jsx`
-- **Change color theme**: swap stylesheet in `public/index.html` (style-green/orange/purple/red/sky-blue)
-- **Deploy**: `npm run deploy`
+- **Change page title or meta**: edit `index.html` at the repo root
+- **Deploy**: `npm run deploy` (publishes — owner's decision)
 - **Dev server**: `npm start`
+- **Build**: `npm run build` → `dist/`
+- **Tests**: `npm test`
