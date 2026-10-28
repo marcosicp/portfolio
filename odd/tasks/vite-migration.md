@@ -126,3 +126,28 @@ revise sin el ruido de los docs.
     `public/css/` (136K) son código muerto que **se despliega**; `src/libs/easing.js` (12K) es
     código muerto que no se bundlea; 7 capturas de proyecto usan `alt=""`, válido para ESLint pero
     inútil para lectores de pantalla.
+
+- **L9** — Continuación pedida por el usuario ("continua"): accesibilidad de las capturas y limpieza
+  de assets muertos.
+  - 6 capturas visibles pasaron de `alt=""` a descripciones reales
+    (`alt="EnSierrasChicas app home screen"`, `alt="Clinker web app screenshot"`, …).
+    Verificado en navegador: `emptyAlts: 0`.
+  - **15 anclas ocultas** de galería tenían como contenido el texto literal
+    `jsx-a11y/anchor-has-content warning` — un arreglo falso de una sesión anterior que silenció el
+    warning de lint metiendo basura en el DOM. Reemplazadas por anclas self-closing con `aria-label`
+    real. `junkTextInDom: false` verificado.
+  - `imagesAdminEnSierrasChicas.image3` se referenciaba pero nunca se definió → `href={undefined}`.
+    Eliminada esa ancla (el proyecto sólo tiene 2 imágenes).
+  - Borrados por muertos: `public/css/` (6 archivos, 136K), `public/js/main.js` (4K) y
+    `src/libs/easing.js` (12K). Verificado que nada los referenciaba (ni `@import`, ni `url()`, ni
+    `index.html`). `dist/` dejó de emitir `css/` y `js/`.
+  - Verificación: lint 0, tests 3/3, build exit 0, `emptyAlts: 0`, cero recursos fallidos.
+    Galerías: álbumes de 3, 4, 2 y 9 imágenes (18 anclas, todas recolectadas por Lightbox2);
+    `.lb-next` avanza `currentImageIndex`. Ningún cambio de comportamiento.
+  - Trampas de medición encontradas y corregidas: (a) el diagnóstico de pi-lens "unmatched </a>"
+    era un falso positivo que no cuenta los tags self-closing — desmentido con ESLint parseando el
+    JSX y con build/tests; (b) dos rondas de click fallaron por intercepción de puntero del overlay
+    de Lightbox2 y por `| head` cortando el pipe, no por defectos del sitio.
+  - Pendiente deliberado: `public/profile_cv.pdf` (76K) sigue duplicado y sin referencias. No se
+    borró porque puede ser una URL estable para compartir el CV (p. ej. desde LinkedIn); es decisión
+    del dueño.

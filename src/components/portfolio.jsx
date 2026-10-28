@@ -148,7 +148,7 @@ function Portfolio() {
                   <div className="work-img" style={{height: "500px"}}>
                     <img
                       src={images.imagesEnSierrasChicas.image1}
-                      alt=""
+                      alt="EnSierrasChicas app home screen"
                       className="img-fluid"
                     />
                   </div>
@@ -179,16 +179,14 @@ function Portfolio() {
                   href={images.imagesEnSierrasChicas.image2}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="EnSierrasChicas screenshot 2"
+                />
                 <a
                   href={images.imagesEnSierrasChicas.image3}
                   data-lightbox="gallery-vmarine"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="EnSierrasChicas screenshot 3"
+                />
               </div>
             </div>
 
@@ -197,7 +195,7 @@ function Portfolio() {
                 <div className="work-img" style={{height: "500px"}}>
                   <img
                     src={images.imagesKieroKuentos.image1}
-                    alt=""
+                    alt="KieroKuentos app screenshot from its Google Play listing"
                     className="img-fluid"
                   />
                 </div>
@@ -231,23 +229,20 @@ function Portfolio() {
                   href={images.imagesKieroKuentos.image2}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="KieroKuentos screenshot 2"
+                />
                 <a
                   href={images.imagesKieroKuentos.image3}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="KieroKuentos screenshot 3"
+                />
                 <a
                   href={images.imagesKieroKuentos.image4}
                   data-lightbox="gallery-aguadeluz"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="KieroKuentos screenshot 4"
+                />
               </div>
             </div>
 
@@ -309,7 +304,7 @@ function Portfolio() {
                   <div className="work-img" style={{height: "150px"}}>
                     <img
                       src={images.imagesClinker.image1}
-                      alt=""
+                      alt="Clinker web app screenshot"
                       className="img-fluid"
                     />
                   </div>
@@ -337,9 +332,8 @@ function Portfolio() {
                   href={images.imagesClinker.image1}
                   data-lightbox="gallery-todo"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="Clinker screenshot 2"
+                />
               </div>
             </div>
             <div className="col-md-4">
@@ -351,7 +345,7 @@ function Portfolio() {
                   <div className="work-img" style={{height: "150px"}}>
                     <img
                       src={images.imagesPosSales.image1}
-                      alt=""
+                      alt="POS Sale Angular app screenshot"
                       className="img-fluid"
                     />
                   </div>
@@ -380,16 +374,14 @@ function Portfolio() {
                   href={images.imagesPosSales.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="POS Sale Angular screenshot 2"
+                />
                 <a
                   href={images.imagesPosSales.image3}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="POS Sale Angular screenshot 3"
+                />
               </div>
             </div>
             <div className="col-md-4">
@@ -401,7 +393,7 @@ function Portfolio() {
                   <div className="work-img" style={{height: "150px"}}>
                     <img
                       src={images.imagesCyclearApp.image1}
-                      alt=""
+                      alt="Cyclear app cover screen"
                       className="img-fluid"
                     />
                   </div>
@@ -431,23 +423,20 @@ function Portfolio() {
                   href={images.imagesCyclearApp.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="Cyclear screenshot 2"
+                />
                 <a
                   href={images.imagesCyclearApp.image3}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="Cyclear screenshot 3"
+                />
                 <a
                   href={images.imagesCyclearApp.image4}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="Cyclear screenshot 4"
+                />
               </div>
             </div>
 
@@ -461,7 +450,7 @@ function Portfolio() {
                   <div className="work-img">
                     <img
                       src={images.imagesAdminEnSierrasChicas.image1}
-                      alt=""
+                      alt="Admin EnSierrasChicas dashboard screenshot"
                       className="img-fluid"
                     />
                   </div>
@@ -490,16 +479,8 @@ function Portfolio() {
                   href={images.imagesAdminEnSierrasChicas.image2}
                   data-lightbox="gallery-smth"
                   style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={images.imagesAdminEnSierrasChicas.image3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                  aria-label="Admin EnSierrasChicas screenshot 2"
+                />
               
               </div>
             </div>

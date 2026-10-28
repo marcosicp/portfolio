@@ -34,9 +34,10 @@ npm run lint         # eslint . (also runs automatically as prebuild)
   Vite's esbuild does not parse JSX inside `.js`.
 - **Import order in `src/index.jsx` matters**: normalize → animate → bootstrap → ionicons →
   font-awesome → `./style.css`. Reordering changes the cascade.
-- **`src/style.css` is the only real stylesheet.** `public/css/style-{green,orange,purple,red,sky-blue}.css`
-  are leftovers from the original HTML template; nothing loads them. Do not "restore" theme
-  switching by linking them.
+- **`src/style.css` is the only stylesheet.** The old template themes
+  (`public/css/style-{green,orange,purple,red,sky-blue}.css`) and `public/js/main.js` were deleted in
+  the Vite cleanup — nothing ever loaded them, they only inflated the deployed bundle. Do not
+  reintroduce theme switching by adding them back.
 - **Project galleries depend on globals.** Root `index.html` loads jQuery and Lightbox2 as classic
   scripts from `public/lib/`, outside the React bundle; `src/components/portfolio.jsx` triggers
   them with `data-lightbox="gallery-*"`. Removing those `<script>`/`<link>` tags breaks the

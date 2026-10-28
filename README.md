@@ -60,8 +60,7 @@ src/
 │   └── skills.js       # Skills configurables
 └── img/                # Assets e imágenes
 public/
-├── lib/                # Vendor JS/CSS (jQuery, Lightbox2, Bootstrap, etc.)
-└── css/                # CSS del template original (sin uso)
+└── lib/                # Vendor JS/CSS (jQuery, Lightbox2, Bootstrap, etc.)
 ```
 
 ---

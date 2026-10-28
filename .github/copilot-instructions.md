@@ -41,9 +41,9 @@ src/
     profile.jpg    # Developer photo
     proyects/      # Project screenshots
 public/
-  css/             # Leftover CSS from the original HTML template (not loaded)
-  js/main.js       # Leftover jQuery interactions (not loaded)
   lib/             # Vendor JS/CSS (Bootstrap, jQuery, Lightbox2, etc.)
+  team.png         # Favicon
+  manifest.json    # Web app manifest
 ```
 
 ## Owner / Person
