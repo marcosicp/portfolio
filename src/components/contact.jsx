@@ -1,6 +1,10 @@
 import React from "react";
-import pdf from '../profile_cv.pdf'
 import soIcon from "../img/stack-overflow.png";
+
+// Served from public/ so the URL stays clean and shareable:
+// https://marcosicp.github.io/portfolio/CV_Marcos_Casor_2026.pdf
+// Regenerate the file with `npm run cv:pdf` after editing CV_Marcos_Casor_2026.md.
+const cvUrl = `${import.meta.env.BASE_URL}CV_Marcos_Casor_2026.pdf`;
 
 
 function Contact() {
@@ -24,7 +28,7 @@ function Contact() {
                         <a
                           className="btn btn-primary btn js-scroll px-4 "
                           style={{backgroundColor: "#C88A35", borderColor: "#C88A35"}}
-                          href={pdf} target="_blank" rel="noreferrer"
+                          href={cvUrl} target="_blank" rel="noreferrer"
                         >
                           PDF
                         </a>

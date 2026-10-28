@@ -47,7 +47,9 @@ export default [
     },
   },
   {
-    files: ["vite.config.js"],
+    // Node-side tooling: Vite/Vitest config, the flat config itself, and the
+    // scripts/ helpers. They run in Node, not the browser, so they need node globals.
+    files: ["vite.config.js", "eslint.config.js", "scripts/**/*.{js,mjs}"],
     languageOptions: {
       globals: {
         ...globals.node,

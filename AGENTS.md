@@ -17,6 +17,7 @@ npm run deploy       # predeploy=build, then gh-pages -d dist  -> PUBLISHES, ask
 npm test             # vitest run (jsdom)
 npm run test:watch   # vitest watch
 npm run lint         # eslint . (also runs automatically as prebuild)
+npm run cv:pdf       # render CV_Marcos_Casor_2026.md -> public/CV_Marcos_Casor_2026.pdf
 ```
 
 `dist/` is generated output — never edit it, never commit it.
@@ -45,10 +46,14 @@ npm run lint         # eslint . (also runs automatically as prebuild)
   classic — the React bundle is a module and is therefore deferred, so it always runs after them.
   Lightbox2 binds via delegation (`$('body').on('click', 'a[data-lightbox]', …)`), so React 19's
   asynchronous `createRoot` timing does not affect it.
-- **The CV button is a static PDF import.** `src/components/contact.jsx` imports
-  `../profile_cv.pdf`; Vite emits it as a hashed asset. `public/profile_cv.pdf` is an unreferenced
-  duplicate — keep them in sync or delete the public copy; do not point the button at
-  `%PUBLIC_URL%` (that variable no longer exists) or at a raw public path.
+- **The CV PDF is generated from the markdown, never hand-edited.** `npm run cv:pdf` renders
+  `CV_Marcos_Casor_2026.md` into `public/CV_Marcos_Casor_2026.pdf` using the local Chrome for
+  print-to-PDF (`scripts/build-cv-pdf.mjs`), and `contact.jsx` links it via
+  `import.meta.env.BASE_URL` so the GitHub Pages base path is respected. Edit the markdown and
+  re-run the script; do not touch the PDF. The layout is deliberately **one column**: applicant
+  tracking systems mis-parse two-column CVs, which is the most common way a CV is discarded before
+  a human reads it. The file lives in `public/` (not `src/`) so the URL stays clean and shareable:
+  `https://marcosicp.github.io/portfolio/CV_Marcos_Casor_2026.pdf`.
 - **Single-page scroll, not routed.** Layout is one page with `<hr className="dotted">` separators
   and anchor navigation from `navbar.jsx`; `body id="page-top"`. `react-router-dom` was removed as
   unused — do not add routing to "match the README".

@@ -89,6 +89,9 @@ npm run lint
 # Correr los tests
 npm test
 
+# Regenerar el PDF del CV desde CV_Marcos_Casor_2026.md
+npm run cv:pdf
+
 # Deploy a GitHub Pages (publica)
 npm run deploy
 ```

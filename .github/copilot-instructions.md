@@ -81,3 +81,5 @@ public/
 - **Build**: `npm run build` → `dist/` (runs `npm run lint` first)
 - **Tests**: `npm test`
 - **Lint**: `npm run lint`
+- **Regenerate the CV PDF**: `npm run cv:pdf` (renders `CV_Marcos_Casor_2026.md` into
+  `public/CV_Marcos_Casor_2026.pdf`; edit the markdown, never the PDF)
