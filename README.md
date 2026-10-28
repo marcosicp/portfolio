@@ -83,6 +83,9 @@ npm run build
 # Previsualizar el build
 npm run preview
 
+# Correr el lint
+npm run lint
+
 # Correr los tests
 npm test
 

@@ -16,6 +16,7 @@ npm run preview      # serve the built dist/ locally
 npm run deploy       # predeploy=build, then gh-pages -d dist  -> PUBLISHES, ask first
 npm test             # vitest run (jsdom)
 npm run test:watch   # vitest watch
+npm run lint         # eslint . (also runs automatically as prebuild)
 ```
 
 `dist/` is generated output — never edit it, never commit it.
@@ -52,6 +53,12 @@ npm run test:watch   # vitest watch
   unused — do not add routing to "match the README".
 - **Autoprefixer runs from `browserslist`.** `vite.config.js` wires `autoprefixer` and the
   `browserslist` field in `package.json` drives it, mirroring what CRA did. Keep both.
+- **`npm run lint` runs as `prebuild`.** ESLint 10 flat config in `eslint.config.js` replaces the
+  `eslintConfig: { extends: "react-app" }` block that CRA read, so lint-on-build is back. It covers
+  the code you build: `src/`, `vite.config.js` and the config itself. `public/**` and `src/libs/**`
+  are vendored template assets that Vite copies verbatim or never imports, so they are ignored on
+  purpose — do not widen the ignores to hide real findings. A lint **error** fails the build;
+  warnings do not. `npx vite build` bypasses the check when you deliberately need it.
 - **Known HTML defect:** `id="about"` is duplicated in `about.jsx` and `stack.jsx`. Anchor
   navigation resolves to the first one (About), so scrolling works, but the markup is invalid.
 

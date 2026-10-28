@@ -65,6 +65,8 @@ public/
 - Static vendor libs are in `public/lib/` (not bundled via npm) and referenced from root `index.html`
 - `src/data/skills.js` is the single source of truth for skill percentages — edit there to update the stack section
 - No state management library — local state only (useState/useEffect)
+- ESLint 10 flat config in `eslint.config.js`; `npm run lint` also runs as `prebuild`, so a lint
+  error fails the build. `public/**` and `src/libs/**` are vendored and ignored on purpose
 - Never run `npm audit fix --force`: it tries to install `react-scripts@0.0.0`
 
 ## Common Tasks
@@ -75,5 +77,6 @@ public/
 - **Change page title or meta**: edit `index.html` at the repo root
 - **Deploy**: `npm run deploy` (publishes — owner's decision)
 - **Dev server**: `npm start`
-- **Build**: `npm run build` → `dist/`
+- **Build**: `npm run build` → `dist/` (runs `npm run lint` first)
 - **Tests**: `npm test`
+- **Lint**: `npm run lint`

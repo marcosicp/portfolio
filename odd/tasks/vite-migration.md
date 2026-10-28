@@ -101,11 +101,28 @@ revise sin el ruido de los docs.
     agregándola a propósito. La verificación inline de arriba es la que vale.
 
 - **L7** — Regresiones y follow-ups conocidos, deliberadamente fuera de este cambio:
-  1. **Se perdió el lint durante el build.** CRA corría ESLint en `start`/`build`; Vite no. No se
-     agregó ESLint para no inflar el slice ni arrastrar errores preexistentes. Recomendado:
-     `eslint` + `eslint-plugin-react-hooks` con un script `lint` propio.
+  1. ~~**Se perdió el lint durante el build.**~~ **RESUELTO en L8.**
   2. **Bundle único de 920 kB** (204 kB gzip). Vite avisa por tamaño de chunk. Recomendado:
      `React.lazy` sobre `Portfolio` o `manualChunks`.
   3. `id="about"` duplicado (ver L5).
   4. `.DS_Store` no está en `.gitignore` aunque `AGENTS.md` advierte no stagearlos.
   5. Propiedad `root` de `~/.npm` (ver L4).
+
+- **L8** — ESLint agregado a pedido del usuario ("agregalo, ejecutalo y resolve lo que consideres
+  necesario"). ESLint 10.13 flat config en `eslint.config.js` con `@eslint/js` recommended,
+  `react-hooks`, `react-refresh` y `jsx-a11y`. Script `lint` + `prebuild`, así que un **error** de
+  lint corta el build (los warnings no).
+  - Cobertura verificada con `--format json`: **17 archivos**, `src/` completo + `vite.config.js`
+    + el propio config. No es un falso verde por config que no matchea.
+  - Resultado sobre el código de aplicación: **0 problemas**. El único hallazgo inicial fueron 3
+    errores en `public/js/main.js` (nada lo carga; Vite lo copia al deploy igual). Se resolvió
+    acotando `ignores` a `public/**` y `src/libs/**` — assets vendorizados que Vite nunca pasa por
+    el grafo de módulos — no silenciando hallazgos de código real.
+  - `npm run lint` → 0. `npm run build` → `BUILD_EXIT=0` con `prebuild` corriendo lint primero.
+    `npm test` → 3/3. `npm audit` → 0.
+  - Trampa de medición evitada: un primer intento reportó `BUILD_EXIT=1` por usar `| head -12`,
+    que corta el pipe y mata npm con SIGPIPE. Re-medido sin truncar: exit 0 real.
+  - Hallazgos nuevos que el lint **no** cubre y quedan como follow-up: `public/js/main.js` (4K) y
+    `public/css/` (136K) son código muerto que **se despliega**; `src/libs/easing.js` (12K) es
+    código muerto que no se bundlea; 7 capturas de proyecto usan `alt=""`, válido para ESLint pero
+    inútil para lectores de pantalla.
