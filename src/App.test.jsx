@@ -17,9 +17,17 @@ describe("App", () => {
   it("keeps the anchor targets the navbar scrolls to", () => {
     const { container } = render(<App />);
 
-    for (const id of ["home", "about", "work", "contact"]) {
+    for (const id of ["home", "about", "stack", "work", "credentials", "contact"]) {
       expect(container.querySelector(`#${id}`), `missing anchor #${id}`).not.toBeNull();
     }
+  });
+
+  it("has no duplicate element ids", () => {
+    const { container } = render(<App />);
+
+    const ids = [...container.querySelectorAll("[id]")].map((el) => el.id);
+    const duplicates = ids.filter((id, i) => ids.indexOf(id) !== i);
+    expect(duplicates, `duplicate ids: ${duplicates.join(", ")}`).toEqual([]);
   });
 
   it("keeps the Lightbox2 gallery hooks on the project links", () => {

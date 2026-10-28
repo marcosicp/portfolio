@@ -38,7 +38,7 @@ function Intro() {
               </h1>
               <h2 className="color-primary pb-0 mb-0 pt-0 mt-0">
                 <Typed
-                  strings={["MOBILE | BACKEND | FRONTEND"]}
+                  strings={["SENIOR .NET BACKEND ENGINEER"]}
                   typeSpeed={30}
                   backDelay={1100}
                   backSpeed={30}
@@ -49,7 +49,7 @@ function Intro() {
               </h2>
               <h2 className="color-primary pb-0 mb-0">
                 <Typed
-                  strings={["TEACHING PROGRAMMING AT INSTITUTO CERVANTES"]}
+                  strings={["C# · AZURE · ANGULAR · REACT · FLUTTER"]}
                   typeSpeed={30}
                   backDelay={0}
                   backSpeed={30}

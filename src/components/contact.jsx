@@ -29,6 +29,19 @@ function Contact() {
                           PDF
                         </a>
                       </div>
+                      <ul className="contact-details">
+                        <li>
+                          <i className="ion-email"></i>{" "}
+                          <a href="mailto:marcosicp2012@gmail.com">marcosicp2012@gmail.com</a>
+                        </li>
+                        <li>
+                          <i className="ion-ios-telephone"></i>{" "}
+                          <a href="tel:+543517151105">+54 351 715 1105</a>
+                        </li>
+                        <li>
+                          <i className="ion-ios-location"></i> Córdoba, Argentina
+                        </li>
+                      </ul>
                     </div>
                     <div className="col-md-6">
                       <div className="title-box-2">
@@ -70,7 +83,7 @@ function Contact() {
                           </li>
                           <li>
                             <a
-                              href="https://www.linkedin.com/in/marcos-casor-pressacco-086ab321/?locale=en_US"
+                              href="https://www.linkedin.com/in/marcos-casor"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -82,7 +95,7 @@ function Contact() {
                           
                           <li>
                             <a
-                              href="mailto: marcos.casor@gmail.com"
+                              href="mailto:marcosicp2012@gmail.com"
                               target="_blank"
                               rel="noopener noreferrer"
                             >

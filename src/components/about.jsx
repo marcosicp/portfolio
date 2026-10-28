@@ -1,6 +1,8 @@
-import React from "react";
 import mePhoto from "../img/profile.jpg";
 
+// Copy taken from CV_Marcos_Casor_2026.md (Summary + Core skills). Replaced the
+// previous generic boilerplate ("Full-Stack Mastery", "Team Player") with the
+// concrete record: the migrations, the pipelines, the products, the teaching.
 function About() {
   return (
     <section id="about" className="about-mf sect-pt4 route">
@@ -21,18 +23,27 @@ function About() {
                         </div>
                       </div>
                       <div className="col-md-9">
-                        I&apos;m a software developer graduated from{" "}
+                        Senior .NET backend engineer, working with .NET since 2011: consultancies, a
+                        bank, two oil companies and two products of my own. I studied{" "}
                         <a href="https://www.cervantes.edu.ar/">
-                          {" "}
-                          <b>Cervantes Institute</b>
+                          <b>Analista en Sistemas Informáticos</b>
                         </a>{" "}
-                        passionate about crafting engaging and efficient user experiences. I leverage my expertise in
-                        .NET (backend), Angular (frontend), and Flutter (mobile) to build robust and scalable
-                        applications,
+                        at Cervantes Institute.
                       </div>
                     </div>
-                    tailored to meet diverse project needs. I continuously seek out new technologies and knowledge,
-                    staying ahead of the curve and contributing to personal and professional growth.
+                    Right now I am at Chevron, writing C#/.NET backend services, Azure Functions for
+                    background processing, and the Azure DevOps pipelines that ship them. I also look
+                    after the team&apos;s Angular applications.
+                    <br />
+                    <br />
+                    What I like most is taking a system nobody wants to touch and leaving it in a state
+                    where the team can work without fear. I moved .NET Framework 4.0 to 4.8 with all the
+                    Entity Framework dependencies riding along, and took Xamarin code to MAUI. None of
+                    that is glamorous. It is the work that keeps a product alive.
+                    <br />
+                    <br />
+                    These days I am putting hours into LLM applications: RAG, agent orchestration,
+                    Python. Still learning, and I would rather say so.
                     <br />
                     <br />
                   </div>
@@ -43,17 +54,22 @@ function About() {
                     </b>{" "}
                     <br />
                     <br />
-                    <b>Full-Stack Mastery:</b> I thrive in both front-end and back-end development, seamlessly
-                    connecting user interfaces with powerful backend logic.
+                    <b>Modernizing what is stuck:</b> .NET Framework 4.0 to 4.8 with its Entity Framework
+                    dependencies, Xamarin to .NET MAUI, Angular 12 to 14 on my own product.
                     <br />
-                    <b>Project Versatility:</b> From greenfield projects to ongoing support, I adapt my skills to
-                    deliver exceptional results in various contexts.
+                    <b>Owning delivery:</b> Azure DevOps pipelines end to end plus the pull-request and
+                    branching rules the team follows at Chevron; GitHub Actions shipping a new version
+                    every Friday at Grape Software.
                     <br />
-                    <b>Team Player:</b> I collaborate effectively in both large and small teams, fostering positive
-                    communication and adhering to best practices.
+                    <b>Leading without the title:</b> most senior developer on a three-person team,
+                    reviewing pull requests and setting the quality bar for the core system.
                     <br />
-                    <b>CI/CD Champion:</b> I actively manage continuous integration and deployment pipelines, ensuring
-                    smooth and efficient software delivery.
+                    <b>Teaching:</b> two years at Institución Cervantes (Mobile Development with Flutter,
+                    Web Programming with .NET Core and React) and introductory programming at Escuelas
+                    PROA.
+                    <br />
+                    <b>Building products:</b> QuieroCuentos and EnSierrasChicas, designed and shipped end
+                    to end.
                   </div>
                 </div>
                 <br />

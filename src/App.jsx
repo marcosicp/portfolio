@@ -9,6 +9,7 @@ import Contact from "./components/contact.jsx";
 import BackToTop from "./components/back-top.jsx";
 import Preloader from "./components/preloader.jsx";
 import Stack from "./components/stack.jsx";
+import Credentials from "./components/credentials.jsx";
 
 // Single-page layout: one scroll with dotted separators, navigated by anchors.
 // Kept as a named export so it can be rendered in isolation by tests.
@@ -24,6 +25,8 @@ export function App() {
         <Stack />
         <hr className="dotted"></hr>
         <Portfolio />
+        <hr className="dotted"></hr>
+        <Credentials />
         <hr className="dotted"></hr>
         <Contact />
         <BackToTop />
