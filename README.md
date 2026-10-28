@@ -51,13 +51,14 @@ src/
 ├── components/
 │   ├── intro.jsx       # Sección hero con typing effect
 │   ├── about.jsx       # Sobre mí
-│   ├── stack.jsx       # Habilidades técnicas
+│   ├── stack.jsx       # Stack técnico (chips por área)
 │   ├── portfolio.jsx   # Proyectos
-│   ├── contact.jsx     # Formulario de contacto
+│   ├── credentials.jsx # Educación, certificaciones e idiomas
+│   ├── contact.jsx     # Descarga de CV y datos de contacto
 │   ├── navbar.jsx      # Navegación
 │   └── ...
 ├── data/
-│   └── skills.js       # Skills configurables
+│   └── skills.js       # Etiquetas del stack (strings, sin porcentajes)
 └── img/                # Assets e imágenes
 public/
 └── lib/                # Vendor JS/CSS (jQuery, Lightbox2, Bootstrap, etc.)

@@ -27,15 +27,16 @@ src/
   components/      # One JSX file per section
     intro.jsx      # Hero section with Lottie animation + Typed.js
     about.jsx      # Bio, photo, strengths
-    stack.jsx      # Skills progress bars
+    stack.jsx      # Skill chips grouped by area
     portfolio.jsx  # Projects showcase (data-lightbox galleries)
-    contact.jsx    # Contact form + CV download
+    credentials.jsx # Education, certifications, languages
+    contact.jsx    # CV download + contact details
     navbar.jsx     # Navigation
     preloader.jsx  # Loading screen
     back-top.jsx   # Scroll to top button
     stars.scss     # Starfield background
   data/
-    skills.js      # Skill sets: frontend, mobile, backend, DB, CI/CD
+    skills.js      # Chip labels by area: frontend, backend, mobile, data, cloud, exploring
   img/
     animation.json # Lottie animation (hero section)
     profile.jpg    # Developer photo

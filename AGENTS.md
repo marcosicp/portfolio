@@ -60,14 +60,19 @@ npm run lint         # eslint . (also runs automatically as prebuild)
   are vendored template assets that Vite copies verbatim or never imports, so they are ignored on
   purpose — do not widen the ignores to hide real findings. A lint **error** fails the build;
   warnings do not. `npx vite build` bypasses the check when you deliberately need it.
-- **Known HTML defect:** `id="about"` is duplicated in `about.jsx` and `stack.jsx`. Anchor
-  navigation resolves to the first one (About), so scrolling works, but the markup is invalid.
+- **Section ids are unique and tested.** Each section owns one anchor: `#home`, `#about`, `#stack`,
+  `#work`, `#credentials`, `#contact`, and the navbar links to each. `src/App.test.jsx` asserts both
+  that every anchor exists and that no element id is duplicated — keep it that way when adding a
+  section.
+- **Skill data is plain strings, not percentages.** `src/data/skills.js` exports string arrays that
+  `stack.jsx` renders as `.chip` tags. The old `porcentage`/`value` fields were dead data and
+  misleading (they put C# at 70%). Do not reintroduce numeric proficiency scores.
 
 ## Where to edit
 
 | Change | File |
 | --- | --- |
-| Skill bars and percentages | `src/data/skills.js` (single source of truth) |
+| Skill chips (labels only) | `src/data/skills.js` (single source of truth) |
 | Projects: cards, links, screenshots | `src/components/portfolio.jsx` + `src/img/proyects/<project>/` |
 | Bio, photo, strengths | `src/components/about.jsx` |
 | Hero typing lines, Lottie | `src/components/intro.jsx` (`src/img/animation.json`) |
