@@ -29,8 +29,13 @@ typings/
 # Optional REPL history
 .node_repl_history
 
+# Vitest cache
+.vitest/
+
 # Output of 'npm pack'
 *.tgz
 
 # Yarn Integrity file
 .yarn-integrity
+# Local AI runtime state
+.atl/

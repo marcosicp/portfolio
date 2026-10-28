@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hi, I am Marcos</title>
+  <meta
+  name="description"
+  content="Marcos Casor software developer of following techs: Flutter, C#, .NET, Angular, React, Firebase, SQL.">
+  <link rel="shortcut icon" href="/team.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--
+    Vite entry document. Absolute URLs that point into `public/` (team.png, lib/**)
+    are rewritten with the `base` from vite.config.js during the build, so they work
+    under the /portfolio/ GitHub Pages path.
+  -->
+</head>
+
+<body id="page-top">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!-- jQuery + Lightbox2 loaded as external scripts (outside React bundle).
+       They must stay classic (non-module) scripts and in this order: Lightbox2
+       depends on jQuery. The React bundle below is a module and therefore deferred,
+       so it always runs after these two. -->
+  <link rel="stylesheet" href="/lib/lightbox/css/lightbox.min.css" />
+  <script src="/lib/jquery/jquery.min.js"></script>
+  <script src="/lib/lightbox/js/lightbox.min.js"></script>
+  <script type="module" src="/src/index.jsx"></script>
+</body>
+
+</html>
