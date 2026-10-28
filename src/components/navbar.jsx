@@ -74,8 +74,8 @@ function Navbar() {
         <button
           className="navbar-toggler collapsed"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDefault"
           aria-controls="navbarDefault"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -97,8 +97,18 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="nav-link js-scroll" href="#stack">
+                Stack
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link js-scroll" href="#work">
                 Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll" href="#credentials">
+                Credentials
               </a>
             </li>
             <li className="nav-item">
